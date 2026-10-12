@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookMyTrip</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Young+Serif&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <a class="logo" href="#" aria-label="BookMyTrip home">
+        <span class="head">bookmy</span>
+        <span class="trip-circle">
+          <span class="trip">trip.</span>
+          <spanclass="com">com
+        </span></span>
+      </a>
+      <div class="support-icon"><i class="fa-solid fa-phone"></i></div>
+      <div class="contact">
+        <p>Call 24/7 Support</p>
+        <p>+91 (44) 1234 5678</p>
+      </div>
+      <label class="top-search">
+        <input type="search" placeholder="Search entire website here">
+        <button aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button></label>
+      <button class="mobile-search" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </header>
+
+    <nav class="navbar">
+      <button class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+        <span>Home</span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <div class="nav-item">
+          <a href="#">Hotels</a>
+          <div class="dropdown">
+            <a>Hotels in India</a>
+            <a>International Hotels</a>
+            <a>Popular Hotels in Asia</a>
+            <a>PopularHotels in Europe</a>
+            <a>Activities</a>
+            <a>Hotel Deals of the Week</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="#">Flights</a>
+          <div class="dropdown">
+            <a>Domestic Flights</a>
+            <a>International Flights</a>
+            <a>One-Way Flights</a>
+            <a>Multi-CityFlights</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="#">Vacations</a>
+          <div class="dropdown">
+            <a>Domestic Package</a>
+            <a>International Package</a>
+            <a>Honeymoon Package</a>
+            <a>Family Vacation</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="#">Hot Deals</a>
+          <div class="dropdown">
+            <a>Today's Deals</a>
+            <a>Hotel</a>
+            <a>Flight</a>
+            <a>Holiday</a>
+            <a>Weekend</a>
+          </div>
+        </div>
+        <div class="nav-item">
+          <a href="#">Travel Guides</a>
+        </div>
+        <div class="nav-item">
+          <a href="#">Blogs</a>
+          <div class="dropdown">
+            <a>Latest Articles</a>
+            <a>Popular Articles</a>
+            <a>Destination Stories</a>
+            <a>Travel Experiences</a>
+          </div>
+        </div>
+        <div class="account">
+          <button>Sign Up</button>
+          <button>My Account</button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <h1>Paris Hilton Hotel, Mumbai, India</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, obcaecati! Praesentium ipsatemporibus,repellat enim provident exercitationem omnis.</p>
+        </div>
+
+        <div class="hero-price">
+          <strong>$1200</strong>
+          <span>Inclusive of food, dinner</span>
+        </div>
+        <section class="booking">
+          <h2>Book Your Trip</h2>
+          <form>
+            <div class="field">
+              <label for="type">What?</label>
+              <select id="type">
+                <option>Hotels</option>
+                <option>Flights</option>
+                <option>Holiday Package</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="destination">Where?</label>
+              <select id="destination">
+                <option>Location</option>
+                <option>Chennai</option>
+                <option>Mumbai</option>
+                <option>Delhi</option>
+                <option>Dubai</option>
+                <option>Japan</option>
+                <option>Paris</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="date">When?</label>
+              <input id="date" type="date">
+            </div>
+            <div class="field compact">
+              <label for="rooms">Who?</label>
+              <select id="rooms">
+                <option>Rooms</option>
+                <option>1 Room</option>
+                <option>2 Rooms</option>
+                <option>3 Rooms</option>
+              </select>
+            </div>
+            <div class="field compact no-label">
+              <label for="adults">Adults</label>
+              <select id="adults">
+                <option>Adults</option>
+                <option>1 Adult</option>
+                <option>2 Adults</option>
+                <option>3 Adults</option>
+              </select>
+            </div>
+            <div class="field compact no-label">
+              <label for="children">Children</label>
+              <select id="children">
+                <option>Children</option>
+                <option>0 Children</option>
+                <option>1 Child</option>
+                <option>2 Children</option>
+              </select>
+            </div>
+            <button class="submit" type="submit">Search</button>
+          </form>
+        </section>
+      </section>
+
+      <section class="content-section">
+        <div class="section-heading">
+          <h2>Popular Hotels</h2>
+          <div class="heading-line">
+
+          </div>
+          <div class="slider-arrows">
+            <button aria-label="Previous">‹</button>
+            <button aria-label="Next">›</button>
+          </div>
+        </div>
+        <div class="hotel-grid">
+          <article class="hotel-card">
+            <img src="img1.jpeg" alt="Taj Mahal Palace hotel">
+            <div class="card-info">
+              <div>
+                <strong>Hotel Tajmahal Palace</strong>
+                <p>Mumbai, India</p>
+              </div>
+              <b>$2000</b>
+            </div>
+          </article>
+          <article class="hotel-card">
+            <img src="img2.jpeg" alt="Mont Blanc hotel with pool">
+            <div class="card-info">
+              <div>
+                <strong>Mont Blanc</strong>
+                <p>Zurich, Switzerland</p>
+              </div><b>$3200</b>
+            </div>
+          </article>
+          <article class="hotel-card">
+            <img src="img3.jpeg" alt="Hotel Marriott interior">
+            <div class="card-info">
+              <div>
+                <strong>Hotel Marriott</strong>
+                <p>Melbourne, Australia</p>
+              </div><b>$1200</b>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section deals-section">
+        <div class="section-heading">
+          <h2>Hot Deals</h2>
+          <div class="heading-line"></div>
+        </div>
+        <div class="deal-grid">
+          <img src="img4.jpeg" alt="Paris Eurostar breaks offer">
+          <img src="img5.jpeg" alt="Coastal holiday offer">
+        </div>
+      </section>
+      <section class="latest">
+        <h2>Latest Blogs</h2>
+        <span>Best places to visit in India</span>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-box">
+        <h2>Company</h2>
+        <a>About the company</a>
+        <a>Terms and Conditions</a>
+        <a>PrivacyPolicy</a>
+        <a>Career</a>
+        <a>Address</a>
+      </div>
+      <div class="footer-box">
+        <h2>Customer Support</h2>
+        <a>Contact</a>
+        <a>FAQ</a>
+      </div>
+      <div class="footer-box">
+        <h2>Follow us</h2>
+        <div class="socials">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-google-plus-g"></i>
+        </div>
+      </div>
+      <div class="footer-box newsletter">
+        <h2>Don't miss our deals and offers</h2>
+        <form>
+          <input type="email" placeholder="Enter your email id">
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
